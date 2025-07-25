@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Safira';
+  src: url('fuente/Safira\ March\ Personal\ Use\ Only.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lemon Regular';
+  src: url('fuente/LEMONMILK-Light.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+.todo {
+  position: relative;
+  margin: 0;
+  padding: 5.5em;
+  overflow: hidden;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.todo>*:not(.waves-canvas) {
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 4.8em;
+  font-weight: 400;
+  margin-bottom: 50px;
+  width: 90%;
+  background: linear-gradient(to right, #615FFF, #A3B3FF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Safira';
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  text-align: right;
+}
+
+.carta {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+section a{
+  color: #312C85;
+  font-family: 'Montserrat';
+}
+
+nav {
+  width: 30%;
+  font-family: 'Montserrat';
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 3em;
+}
+
+nav ul li a {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #312C85;
+  font-size: 17px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+li a:hover {
+  color: #fff;
+  padding: 5px;
+  background-color: #625fff9c;
+}
+
+main p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-family: 'Montserrat';
+}
+section{
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+}
+section p {
+  width: 60%;
+}
+
+.contacto{
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+.tarjeta-contacto{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+/* Modo claro/oscuro */
+.claro {
+  background-color: #fafafa;
+  color: #111;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.oscuro {
+  background-color: #111;
+  color: #eee;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.oscuro h1 {
+  color: #fff;
+}
+
+.oscuro li a {
+  color: #fff;
+}
+
+.oscuro li a:hover {
+  background-color: #615FFF;
+}
+
+.oscuro p {
+  color: #fff;
+}
+
+.oscuro .proyectos {
+  color: #fff;
+}
+
+.oscuro h1 {
+  background: linear-gradient(to right, #fff, #7C86FF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.oscuro.text-2xl.mb-4 {
+    background: linear-gradient(to right, #fff, #7C86FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.oscuro .tarjeta-contacto a {
+    color: #fff;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}

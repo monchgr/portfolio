@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'Safira';
+    src: url('src/fuente/Safira March Personal Use Only.ttf') format('truetype');
+}
+
+.text-2xl.mb-4 {
+    font-size: 2.5em;
+    font-weight: 500;
+    width: 90%;
+    color: #615FFF;
+    font-family: 'Safira';
+    text-align: right;
+    flex-wrap: nowrap !important;
+}
+.oscuro .text-2xl.mb-4{
+    color: #fff;
+}
