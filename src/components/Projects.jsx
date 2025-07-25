@@ -1,8 +1,26 @@
 import BlurText from '../components/BlurText';
-import './About.css';
+import './Projects.css';
 
+const projects = [
+  {
+    title: 'Recordatorios',
+    image: 'img/web.jpg', // Reemplaza con la ruta correcta
+    link: 'https://mi-proyecto1.com',
+  },
+  {
+    title: 'Mi Proyecto 2',
+    image: 'img/web.jpg',
+    link: 'https://mi-proyecto2.com',
+  },  {
+    title: 'App del clima',
+    image: 'img/web.jpg',
+    link: 'https://mi-proyecto2.com',
+  },
+  // Agrega más proyectos aquí
+];
 const Projects = () => (
-    <section>
+
+    <section className='projects-section'>
         <h2>
             <BlurText
                 text="Proyectos"
@@ -12,7 +30,22 @@ const Projects = () => (
                 className="text-2xl mb-4"
             />
         </h2>
-  
+        <div className="projects-container">
+            {projects.map((project, index) => (
+                <a
+                    key={index}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-card"
+                >
+                    <img src={project.image} alt={project.title} />
+                    <div className="project-info">
+                        <h3>{project.title}</h3>
+                    </div>
+                </a>
+            ))}
+        </div>
     </section>
 );
 

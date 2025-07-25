@@ -31,7 +31,7 @@
 
 h1 {
   font-size: 4.8em;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 50px;
   width: 90%;
   background: linear-gradient(to right, #615FFF, #A3B3FF);
@@ -83,7 +83,7 @@ nav ul {
 
 nav ul li a {
   font-family: 'Montserrat';
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   color: #312C85;
@@ -159,6 +159,7 @@ section p {
   background: linear-gradient(to right, #fff, #7C86FF);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 .oscuro.text-2xl.mb-4 {
     background: linear-gradient(to right, #fff, #7C86FF);
