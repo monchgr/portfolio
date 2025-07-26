@@ -1,4 +1,4 @@
-
+import './About.css';
 const Home = () => {
   return (
     <section>

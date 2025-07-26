@@ -3,9 +3,9 @@ import './Projects.css';
 
 const projects = [
   {
-    title: 'Recordatorios',
-    image: 'img/web.jpg', // Reemplaza con la ruta correcta
-    link: 'https://mi-proyecto1.com',
+    title: 'App del clima',
+    image: 'img/web-clima.jpg', // Reemplaza con la ruta correcta
+    link: 'api-clima-proyecto.vercel.app',
   },
   {
     title: 'Mi Proyecto 2',
