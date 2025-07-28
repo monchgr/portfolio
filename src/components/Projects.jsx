@@ -1,5 +1,6 @@
 import BlurText from '../components/BlurText';
 import './Projects.css';
+import { useTranslation } from 'react-i18next';
 
 const projects = [
   {
@@ -16,14 +17,16 @@ const projects = [
     image: 'img/web.jpg',
     link: 'https://mi-proyecto2.com',
   },
-  // Agrega más proyectos aquí
+  // Agrega más proyectos  aquí
 ];
-const Projects = () => (
+const Projects = () => { 
+    const { t } = useTranslation();
+    return ( 
 
     <section className='projects-section'>
         <h2>
             <BlurText
-                text="Proyectos"
+                text={t('projectsTitle')}
                 delay={100}
                 animateBy="words"
                 direction="top"
@@ -47,6 +50,7 @@ const Projects = () => (
             ))}
         </div>
     </section>
-);
+    );
+};
 
 export default Projects;

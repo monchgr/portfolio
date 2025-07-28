@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import "tailwindcss";
 @font-face {
   font-family: 'Safira';
   src: url('fuente/Safira.ttf') format('truetype');
@@ -18,7 +18,7 @@
 .todo {
   position: relative;
   margin: 0;
-  padding: 5.5em;
+  padding: 4em;
   overflow: hidden;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -32,7 +32,6 @@
 h1 {
   font-size: 4.8em;
   font-weight: 600;
-  margin-bottom: 50px;
   width: 90%;
   background: linear-gradient(to right, #615FFF, #A3B3FF);
   background-clip: text;
@@ -60,7 +59,11 @@ main {
   display: flex;
   flex-direction: row;
 }
-
+.selectores {
+display: flex;
+gap: 20px;
+align-items: center;
+}
 a {
   text-decoration: none;
 }
@@ -72,6 +75,7 @@ section a{
 nav {
   width: 30%;
   font-family: 'Montserrat';
+  margin-top: 40px;
 }
 
 nav ul {
