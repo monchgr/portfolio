@@ -1,26 +1,18 @@
-import { useState } from 'react';
-import './App.css';
-import './index.css';
-import Waves from './Waves';
-import Switch from './Switch';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Home from './components/Home';
-import BlurText from "./components/BlurText";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-} from 'react-router-dom';
-
+import { useState } from "react";
+import "./App.css";
+import "./index.css";
+import Waves from "./Waves";
+import Switch from "./Switch";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 function App() {
-
-  const handleAnimationComplete = () => {
-    console.log('Animation completed!');
-  };
+  const { t } = useTranslation();
 
   const [modoOscuro, setModoOscuro] = useState(false);
 
@@ -29,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className={modoOscuro ? 'oscuro' : 'claro'}>
+    <div className={modoOscuro ? "oscuro" : "claro"}>
       <Router>
         <div className="todo">
           <Waves
@@ -47,17 +39,25 @@ function App() {
           />
 
           <header>
-
             <div className="carta">
               <h1>Monserrat</h1>
-              <Switch onToggle={() => setModoOscuro(prev => !prev)} />
+              <div className="selectores">
+                <Switch onToggle={handleToggle} isChecked={modoOscuro} />
+                <LanguageSwitcher isDarkMode={modoOscuro} />
+              </div>
             </div>
 
             <nav>
               <ul>
-                <li><Link to="/About">About</Link></li>
-                <li><Link to="/Projects">Projects</Link></li>
-                <li><Link to="/Contact">Contact</Link></li>
+                <li>
+                  <Link to="/About">{t("nav.about")}</Link>
+                </li>
+                <li>
+                  <Link to="/Projects">{t("nav.projects")}</Link>
+                </li>
+                <li>
+                  <Link to="/Contact">{t("nav.contact")}</Link>
+                </li>
               </ul>
             </nav>
           </header>
@@ -70,12 +70,10 @@ function App() {
               <Route path="/Contact" element={<Contact />} />
             </Routes>
           </main>
-
         </div>
       </Router>
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;

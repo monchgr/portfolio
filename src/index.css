@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
 @font-face {
-  font-family: 'Safira';
-  src: url('fuente/Safira.ttf') format('truetype');
+  font-family: "Safira";
+  src: url("fuente/Safira.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Lemon Regular';
-  src: url('fuente/LEMONMILK-Light.otf') format('opentype');
+  font-family: "Lemon Regular";
+  src: url("fuente/LEMONMILK-Light.otf") format("opentype");
 }
 
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .todo {
   position: relative;
   margin: 0;
-  padding: 5.5em;
+  padding: 4em;
   overflow: hidden;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.todo>*:not(.waves-canvas) {
+.todo > *:not(.waves-canvas) {
   position: relative;
   z-index: 10;
 }
@@ -32,14 +32,12 @@
 h1 {
   font-size: 4.8em;
   font-weight: 600;
-  margin-bottom: 50px;
   width: 90%;
-  background: linear-gradient(to right, #615FFF, #A3B3FF);
+  background: linear-gradient(to right, #615fff, #a3b3ff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Safira';
+  font-family: "Safira";
 }
-
 
 header {
   display: flex;
@@ -61,33 +59,39 @@ main {
   flex-direction: row;
 }
 
+.selectores {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
 a {
   text-decoration: none;
 }
-section a{
-  color: #312C85;
-  font-family: 'Montserrat';
+section a {
+  color: #312c85;
+  font-family: "Montserrat";
 }
 
 nav {
   width: 30%;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
+  margin-top: 40px;
 }
 
 nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 3em;
+  gap: 2em;
 }
 
 nav ul li a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: #312C85;
-  font-size: 17px;
+  color: #312c85;
+  font-size: 15px;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -100,9 +104,9 @@ li a:hover {
 main p {
   font-size: 17px;
   line-height: 1.6;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
-section{
+section {
   display: flex;
   justify-content: right;
   align-items: flex-end;
@@ -112,12 +116,12 @@ section p {
   width: 60%;
 }
 
-.contacto{
+.contacto {
   display: flex;
   justify-content: right;
   flex-direction: column;
 }
-.tarjeta-contacto{
+.tarjeta-contacto {
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -125,7 +129,7 @@ section p {
 /* Modo claro/oscuro */
 .claro {
   background-color: #fafafa;
-  color: #1E1A4D;
+  color: #1e1a4d;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -144,7 +148,7 @@ section p {
 }
 
 .oscuro li a:hover {
-  background-color: #615FFF;
+  background-color: #615fff;
 }
 
 .oscuro p {
@@ -156,18 +160,18 @@ section p {
 }
 
 .oscuro h1 {
-  background: linear-gradient(to right, #fff, #7C86FF);
+  background: linear-gradient(to right, #fff, #7c86ff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
 .oscuro.text-2xl.mb-4 {
-    background: linear-gradient(to right, #fff, #7C86FF);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #fff, #7c86ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .oscuro .tarjeta-contacto a {
-    color: #fff;
+  color: #fff;
 }
 body,
 html {

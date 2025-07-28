@@ -1,54 +1,58 @@
-import BlurText from '../components/BlurText';
-import './Projects.css';
+import BlurText from "../components/BlurText";
+import "./Projects.css";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
-    title: 'App del clima',
-    image: 'img/web-clima.png', // Reemplaza con la ruta correcta
-    link: 'https://api-clima-proyecto.vercel.app/',
-    etiqueta: 'HTML5'
+    title: "App del clima",
+    image: "img/web-clima.png", // Reemplaza con la ruta correcta
+    link: "https://api-clima-proyecto.vercel.app/",
+    etiqueta: "HTML5",
   },
   {
-    title: 'Mi Proyecto 2',
-    image: 'img/web.jpg',
-    link: 'https://mi-proyecto2.com',
-  },  {
-    title: 'App del clima',
-    image: 'img/web.jpg',
-    link: 'https://mi-proyecto2.com',
+    title: "Mi Proyecto 2",
+    image: "img/web.jpg",
+    link: "https://mi-proyecto2.com",
   },
-  // Agrega más proyectos aquí
+  {
+    title: "App del clima",
+    image: "img/web.jpg",
+    link: "https://mi-proyecto2.com",
+  },
+  // Agrega más proyectos  aquí
 ];
-const Projects = () => (
-
-    <section className='projects-section'>
-        <h2>
-            <BlurText
-                text="Proyectos"
-                delay={100}
-                animateBy="words"
-                direction="top"
-                className="text-2xl mb-4"
-            />
-        </h2>
-        <div className="projects-container">
-            {projects.map((project, index) => (
-                <a
-                    key={index}
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-card"
-                >
-                    {/* <img src={project.image} alt={project.title} /> */}
-                    <div className="project-info">
-                        <h3>{project.title}</h3>
-                        <p>{project.etiqueta} </p>
-                    </div>
-                </a>
-            ))}
-        </div>
+const Projects = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="projects-section">
+      <h2>
+        <BlurText
+          text={t("projectsTitle")}
+          delay={100}
+          animateBy="words"
+          direction="top"
+          className="text-2xl mb-4"
+        />
+      </h2>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            {/* <img src={project.image} alt={project.title} /> */}
+            <div className="project-info">
+              <h3>{project.title}</h3>
+              <p>{project.etiqueta} </p>
+            </div>
+          </a>
+        ))}
+      </div>
     </section>
-);
+  );
+};
 
 export default Projects;

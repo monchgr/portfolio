@@ -1,30 +1,93 @@
 @font-face {
-    font-family: 'Safira';
-    src: url('src/fuente/Safira March Personal Use Only.ttf') format('truetype');
+  font-family: "Safira";
+  src: url("src/fuente/Safira March Personal Use Only.ttf") format("truetype");
 }
 
 h2 {
-    font-size: 2em;
-    font-weight: 600;
-    width: 90%;
-    color: #615FFF;
-    font-family: 'Safira';
-    text-align: right;
-    
-    justify-content: flex-end;
-    flex-wrap: nowrap !important;
+  font-size: 2em;
+  font-weight: 600;
+  width: 90%;
+  color: #615fff;
+  font-family: "Safira";
+  text-align: right;
+
+  justify-content: flex-end;
+  flex-wrap: nowrap !important;
+}
+.about-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center; /* Centra el título */
+}
+
+.titulo2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Ajusta el tamaño según tu diseño */
+  color: var(--primary-color); /* Usa una variable si tienes un tema */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Por defecto para móviles, apilado */
+  align-items: center;
+  gap: 30px; /* Espacio entre la imagen y el texto */
+}
+
+.about-image-container {
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.profile-photo {
+  width: 200px; /* Tamaño de la foto */
+  height: 200px;
+  border-radius: 50%; /* Para hacerla redonda */
+  object-fit: cover; /* Asegura que la imagen no se distorsione */
+  border: 4px solid var(--accent-color); /* Un borde decorativo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.about-text-content {
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.about-text-content p {
+  margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+.about-text-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media query para pantallas más grandes (escritorio) */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* En escritorio, la imagen y el texto en fila */
+    text-align: left;
+  }
+
+  .about-image-container {
+    margin-right: 30px; /* Espacio a la derecha de la imagen */
+  }
+
+  .about-text-content {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+  }
 }
 
 .text-2xl.mb-4 {
-    font-size: 2em;
-    font-weight: 600;
-    width: 90%;
-    justify-content: flex-end;
-    color: #615FFF;
-    font-family: 'Safira';
-    text-align: right;
+  font-size: 2em;
+  font-weight: 600;
+  width: 90%;
+  justify-content: flex-end;
+  color: #615fff;
+  font-family: "Safira";
+  text-align: right;
 }
 
 .oscuro .text-2xl.mb-4 {
-    color: #fff;
+  color: #fff;
 }
