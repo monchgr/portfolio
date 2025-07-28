@@ -4,8 +4,9 @@ import './Projects.css';
 const projects = [
   {
     title: 'App del clima',
-    image: 'img/web-clima.jpg', // Reemplaza con la ruta correcta
-    link: 'api-clima-proyecto.vercel.app',
+    image: 'img/web-clima.png', // Reemplaza con la ruta correcta
+    link: 'https://api-clima-proyecto.vercel.app/',
+    etiqueta: 'HTML5'
   },
   {
     title: 'Mi Proyecto 2',
@@ -39,9 +40,10 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     className="project-card"
                 >
-                    <img src={project.image} alt={project.title} />
+                    {/* <img src={project.image} alt={project.title} /> */}
                     <div className="project-info">
                         <h3>{project.title}</h3>
+                        <p>{project.etiqueta} </p>
                     </div>
                 </a>
             ))}
