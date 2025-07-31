@@ -2,25 +2,23 @@ import BlurText from '../components/BlurText';
 import './About.css';
 import { useTranslation } from 'react-i18next';
 
-const About = () => {
+const Skills = () => {
     const { t } = useTranslation();
     return (
         <section>
             <h2 className='titulo2'>
                 <BlurText
-                    text={t('about.title')}
+                    text={t('skillsTitle')}
                     delay={100}
                     animateBy="words"
                     direction="top"
                     className="text-2xl mb-4"
                 />
             </h2>
-            <p>{t('about.intro')}</p>
-            <p>{t('about.description')}</p>
-            <p>{t('about.strengths')}</p>
-            <p>{t('about.callToAction')}</p>
+            <p>{t('skillsText')}</p>
+
         </section>
     );
 };
 
-export default About;
+export default Skills;

@@ -18,7 +18,7 @@
 .todo {
   position: relative;
   margin: 0;
-  padding: 4em;
+  padding: 4.5em;
   overflow: hidden;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -30,10 +30,10 @@
 }
 
 h1 {
-  font-size: 4.8em;
+  font-size: 6em;
   font-weight: 600;
   width: 90%;
-  background: linear-gradient(to right, #615fff, #a3b3ff);
+  background: linear-gradient(to right, #4f46e5, #c7d2fe);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Safira";
@@ -43,7 +43,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 5em;
 }
 
 main {
@@ -73,7 +72,6 @@ section a {
 }
 
 nav {
-  width: 30%;
   font-family: "Montserrat";
   margin-top: 40px;
 }

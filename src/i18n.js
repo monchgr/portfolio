@@ -20,6 +20,7 @@ i18n
             about: "About",
             projects: "Projects",
             contact: "Contact",
+            skills: "Skills",
           },
           // Contenido de ejemplo para las páginas
           homeTitle: "Welcome to my portfolio",
@@ -29,19 +30,21 @@ i18n
             title: "About Me",
             photoAlt: "Montserrat Garcia profile picture",
             intro:
-            //   "Hi! I'm Montserrat Garcia, a passionate Front-End Developer.",
+               "Hi! I'm Montserrat Garcia, a passionate Front-End Developer.",
             description:
-            //   "My journey in web development focuses on creating intuitive and appealing user experiences. I enjoy transforming ideas into functional and visually impactful interfaces. I am motivated by the possibility of solving complex problems and seeing my code come to life in the browser.",
+               "My journey in web development focuses on creating intuitive and appealing user experiences. I enjoy transforming ideas into functional and visually impactful interfaces. I am motivated by the possibility of solving complex problems and seeing my code come to life in the browser.",
             strengths:
-            //   "I am proficient in **Vanilla JavaScript** and currently specializing in **React**, building modern and efficient applications. I am passionate about **web accessibility** and **responsive design**, ensuring every project is inclusive and looks perfect on any device.",
+               "I am proficient in **Vanilla JavaScript** and currently specializing in **React**, building modern and efficient applications. I am passionate about **web accessibility** and **responsive design**, ensuring every project is inclusive and looks perfect on any device.",
             callToAction:
-            //   "Ready to see my projects? Explore my work or contact me to discuss your next project.",
+               "Ready to see my projects? Explore my work or contact me to discuss your next project.",
           },
           projectsTitle: "My Projects",
           projectsText: "Here is a list of my recent work.",
           contactTitle: "Get in Touch",
           contactText:
             "Feel free to reach out to me through the following channels.",
+          skillsTitle: "title",
+          skillsText: "text",
         },
       },
       es: {
@@ -52,6 +55,7 @@ i18n
             about: "Sobre mí",
             projects: "Proyectos",
             contact: "Contacto",
+            skills: "Habilidades",
           },
 
           // Contenido de ejemplo para las páginas
@@ -61,13 +65,13 @@ i18n
             title: "Sobre Mí",
             photoAlt: "Foto de perfil de Montserrat García",
             intro:
-            //   "¡Hola! Soy Montserrat García, una apasionada desarrolladora front-end.",
+              "¡Hola! Soy Montserrat García, una apasionada desarrolladora front-end.",
             description:
-            //   "Mi viaje en el desarrollo web se centra en crear experiencias de usuario intuitivas y atractivas. Disfruto transformando ideas en interfaces funcionales y visualmente impactantes. Me motiva la posibilidad de resolver problemas complejos y ver cómo mi código cobra vida en el navegador.",
+               "Mi viaje en el desarrollo web se centra en crear experiencias de usuario intuitivas y atractivas. Disfruto transformando ideas en interfaces funcionales y visualmente impactantes. Me motiva la posibilidad de resolver problemas complejos y ver cómo mi código cobra vida en el navegador.",
             strengths:
-            //   "Soy experta en **Vanilla JavaScript** y actualmente me estoy especializando en **React**, construyendo aplicaciones modernas y eficientes. Me apasiona la **accesibilidad web** y el **diseño responsivo**, asegurando que cada proyecto sea inclusivo y se vea perfecto en cualquier dispositivo.",
+               "Soy experta en **Vanilla JavaScript** y actualmente me estoy especializando en **React**, construyendo aplicaciones modernas y eficientes. Me apasiona la **accesibilidad web** y el **diseño responsivo**, asegurando que cada proyecto sea inclusivo y se vea perfecto en cualquier dispositivo.",
             callToAction:
-            //   "¿Listo para ver mis proyectos? Explora mi trabajo o contáctame para hablar sobre tu próximo proyecto.",
+               "¿Listo para ver mis proyectos? Explora mi trabajo o contáctame para hablar sobre tu próximo proyecto.",
           },
 
           projectsTitle: "Mis Proyectos",
@@ -75,6 +79,8 @@ i18n
           contactTitle: "Ponte en Contacto",
           contactText:
             "No dudes en contactarme a través de los siguientes canales.",
+          skillsTitle: "titulo",
+          skillsText: "text",
         },
       },
     },

@@ -4,10 +4,12 @@
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 600;
   width: 90%;
-  color: #615fff;
+  color: #3730a3;
+  background: linear-gradient(to right, #3730a3, #a3b3ff);
+  background-clip: text;
   font-family: "Safira";
   text-align: right;
 
@@ -81,6 +83,9 @@ h2 {
 .text-2xl.mb-4 {
   font-size: 2em;
   font-weight: 600;
+  color: #615fff;
+  background: linear-gradient(to right, #615fff, #a3b3ff);
+  background-clip: text;
   width: 90%;
   justify-content: flex-end;
   color: #615fff;

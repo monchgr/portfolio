@@ -6,6 +6,7 @@ import Switch from "./Switch";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -46,33 +47,42 @@ function App() {
                 <LanguageSwitcher isDarkMode={modoOscuro} />
               </div>
             </div>
+            </header>
 
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/About">{t("nav.about")}</Link>
-                </li>
-                <li>
-                  <Link to="/Projects">{t("nav.projects")}</Link>
-                </li>
-                <li>
-                  <Link to="/Contact">{t("nav.contact")}</Link>
-                </li>
-              </ul>
-            </nav>
-          </header>
+            <div className="flex flex-row items-start gap-8 mt-10">
+              <nav className="w-[30%]">
+                <ul>
+                  <li>
+                    <Link to="/About">{t("nav.about")}</Link>
+                  </li>
+                  <li>
+                    <Link to="/Projects">{t("nav.projects")}</Link>
+                  </li>
+                  <li>
+                    <Link to="/Contact">{t("nav.contact")}</Link>
+                  </li>
+                  <li>
+                    <Link to="/Skills">{t("nav.skills")}</Link>
+                  </li>
+                </ul>
+              </nav>
+         
 
-          <main>
+          <main className="w-[70%]">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/About" element={<About />} />
               <Route path="/Projects" element={<Projects />} />
               <Route path="/Contact" element={<Contact />} />
+              <Route path="/Skills" element={<Skills />} />
             </Routes>
           </main>
+          </div>
         </div>
-      </Router>
-    </div>
+   
+      </Router >
+   
+    </div >
   );
 }
 
